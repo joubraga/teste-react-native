@@ -12,8 +12,10 @@ class Area1 extends Component {
     }
 
     render() {
+        let { params } = this.props.navigation.state
         return (
             <View>
+                <Text> { params.title } </Text>
                 <Text> Página Area 1 </Text>
             </View>
         )

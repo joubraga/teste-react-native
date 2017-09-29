@@ -12,8 +12,10 @@ class Area2 extends Component {
     }
 
     render() {
+        let { params } = this.props.navigation.status
         return (
             <View>
+                <Text> { params.title } </Text>
                 <Text> Página Area 2 </Text>
             </View>
         )

@@ -18,11 +18,11 @@ class App extends Component {
         return (
             <View style={styles.container}>
               <Text> Area 1 </Text>
-              <Button title="Go to Area 1 App" onPress={ () => navigate('Area1') } ></Button>
+              <Button title="Go to Area 1 App" onPress={ () => navigate('Area1', { title: 'Clube On Área 1' }) } ></Button>
               <Text> Area 2 </Text>
-              <Button title="Go to Area 2 App" onPress={ () => navigate('Area2') } ></Button>
+              <Button title="Go to Area 2 App" onPress={ () => navigate('Area2', { title: 'Clube On Área 2' }) } ></Button>
               <Text> Fim </Text>
-              <Button title="Chega por hoje" onPress={ () => navigate('Fim') } ></Button>
+              <Button title="Chega por hoje" onPress={ () => navigate('Fim', { title: 'Dá o diproma' }) } ></Button>
                 {/*<Counter></Counter>*/}
             </View>
         );
